@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <section class="centerscreen">
+      <div>
+        <h1 style="font-size: 50px" id="titulo">Formulario</h1>
+        <form  onsubmit="validarFormulario()">
+          <p class="title">Nombre Completo:</p>
+          <input type="text" name="nombre" placeholder="Ingrese su Nombre"  id="inNombre" onkeyup="validarNombre()"/>
+          <p id="nombre"></p>
+          <p class="title">Email:</p>
+          <input type="email" name="mail" placeholder="Ingrese su Email" />
+          <p class="title">Contraseña:</p>
+          <input type="password"name="password"placeholder="Ingrese su Contraseña" id="inContraseña" onkeyup="validarContraseña()"/>
+          <p id="contra"></p>
+          <p class="title">Confirmar Contraseña:</p>
+          <input type="password" name="password" placeholder="Ingrese su Contraseña nuevamente"/>
+          <input type="submit" name="submit" id="submit"/>
+        </form>
+      </div>
+    </section>
+    <footer class="centerscreen">
+      <pre>Copyright © 2025 Joaquin Sfintzi.</pre>
+    </footer>
+  </body>
+</html>

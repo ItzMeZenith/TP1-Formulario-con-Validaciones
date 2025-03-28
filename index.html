@@ -11,17 +11,19 @@
     <section class="centerscreen">
       <div>
         <h1 style="font-size: 50px" id="titulo">Formulario</h1>
-        <form  onsubmit="validarFormulario()">
+        <form onsubmit=validarFormulario(event)>
           <p class="title">Nombre Completo:</p>
           <input type="text" name="nombre" placeholder="Ingrese su Nombre"  id="inNombre" onkeyup="validarNombre()"/>
           <p id="nombre"></p>
           <p class="title">Email:</p>
-          <input type="email" name="mail" placeholder="Ingrese su Email" />
+          <input type="text" name="mail" placeholder="Ingrese su Email" id="inMail" onkeyup="validarMail()"/>
+          <p id="mail"></p>
           <p class="title">Contraseña:</p>
           <input type="password"name="password"placeholder="Ingrese su Contraseña" id="inContraseña" onkeyup="validarContraseña()"/>
           <p id="contra"></p>
           <p class="title">Confirmar Contraseña:</p>
-          <input type="password" name="password" placeholder="Ingrese su Contraseña nuevamente"/>
+          <input type="password" name="password" placeholder="Ingrese su Contraseña nuevamente" id="inConfirmar" onkeyup="confirmarContraseña()"/>
+          <p id="confirmar"></p>
           <input type="submit" name="submit" id="submit"/>
         </form>
       </div>
